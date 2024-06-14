@@ -1,0 +1,33 @@
+#inicio {
+    border-bottom: 3px solid rgb(43, 49, 133);
+    font-weight: 600;
+}
+
+article {
+    width: 65%;
+    margin-left: 17.5%;
+}
+
+p {
+    margin-top: 1rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+ol > li {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 19px;
+}
+
+ul > li {
+    list-style: inside;
+    margin-left: 19px;
+    font-weight: 500;
+}
+
+#assinatura {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
