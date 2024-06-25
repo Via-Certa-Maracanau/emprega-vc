@@ -13,15 +13,25 @@
     <div id="topo">
         <img src="assets/img/Logo-Azul-2.png" alt="Logo Via Certa Azul">
 
+        <!-- Só será exibido quando atingir a condição presente no arquivo menu.js -->
+        <button id="menu-icon">
+            <!-- icone do menu mobile -->
+        </button>
+
+        <!-- css do menu está no global.css pois aparece em todas as páginas -->
         <nav id="menu">
             <ul>
-                <a href="index.html"><li id="inicio">Início</li></a>
-                <a href="recrutamento_e_selecao.html"><li id="res">Recrutamento e Seleção</li></a>
+                <a href="index.html"><li id="marcado">Início</li></a>
+                <a href="recrutamento_e_selecao.html"><li>Recrutamento e Seleção</li></a>
+                <!-- <a href="curriculo.html"><li>Currículo</li></a> -->
+                <a href="formulario.html"><li>Formulário</li></a>
             </ul>
         </nav>
     </div>
 
     <article>
+        <img src="assets/img/imagem_emprega_VC.png" width="100%">
+
         <p>Olá Aluno(a),</p>
 
         <p>Nós, da <b>Escola Via Certa Maracanaú</b>, iremos auxiliar você a se inserir no mercado de trabalho por meio do programa <b>Emprega VC</b>. Este programa de orientação profissional e desenvolvimento de carreira visa encaminhá-lo(a) para o mundo do trabalho, fornecendo suporte em diversas etapas do processo.</p>
@@ -60,5 +70,7 @@
 
         <p id="assinatura">Rose Nunes <span>Diretora Pedagógica Via Certa</span></p>
     </article>
+
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>

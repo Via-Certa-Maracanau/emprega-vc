@@ -1,6 +1,6 @@
-#res {
-    border-bottom: 3px solid rgb(43, 49, 133);
-    font-weight: 600;
+#tudo {
+    overflow: auto;
+    height: 88vh;
 }
 
 header {

@@ -1,28 +1,28 @@
-#inicio {
-    border-bottom: 3px solid rgb(43, 49, 133);
-    font-weight: 600;
-}
-
 article {
-    width: 65%;
-    margin-left: 17.5%;
+    width: 100%;
+    height: 88vh;
+    overflow: auto;
 }
 
 p {
     margin-top: 1rem;
     text-align: justify;
     font-weight: 500;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
 }
 
 ol > li {
     font-weight: bold;
     margin-top: 1rem;
-    margin-left: 19px;
+    margin-left: 18.9%;
+    margin-right: 17.5%;
 }
 
 ul > li {
     list-style: inside;
-    margin-left: 19px;
+    margin-left: 18.9%;
+    margin-right: 17.5%;
     font-weight: 500;
 }
 
@@ -30,4 +30,14 @@ ul > li {
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    ol > li {
+        margin-left: 22.2%;
+    }
+    
+    ul > li {
+        margin-left: 22.2%;
+    }
 }
