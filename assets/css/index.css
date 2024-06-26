@@ -5,18 +5,14 @@ article {
 }
 
 p {
-    margin-top: 1rem;
     text-align: justify;
     font-weight: 500;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+    margin: 1rem 17.5% 0 17.5%;
 }
 
 ol > li {
     font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 18.9%;
-    margin-right: 17.5%;
+    margin: 1rem 17.5% 0 18.9%;
 }
 
 ul > li {
@@ -34,10 +30,14 @@ ul > li {
 
 @media screen and (max-width: 1000px) {
     ol > li {
-        margin-left: 22.2%;
+        margin-left: 14.5%;
+    }
+
+    p {
+        margin: 1rem 10% 0 10%;
     }
     
     ul > li {
-        margin-left: 22.2%;
+        margin-left: 14.5%;
     }
 }
