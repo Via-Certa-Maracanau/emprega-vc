@@ -1,5 +1,5 @@
 article {
-    width: 100%;
+    width: 99%;
     height: 88vh;
     display: flex;
     flex-direction: column;
@@ -17,21 +17,89 @@ article > p {
 
     margin: 1rem 17.5% 0 17.5%;
 }
-ul > li {
-    text-align: justify;
-    font-weight: 500;
 
-    margin: .5rem 17.5% 0 19%;
+#infoDicas {
+    text-align: center;
+    font-weight: 500;
+    color: gray;
+    margin: .5rem 0;
+}
+
+#icones {
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#icones > li > img {
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    border-radius: 50%;
+    border-top: 3px solid rgb(146, 255, 112);
+    border-right: 3px solid rgb(139, 139, 241);
+    border-bottom: 3px solid rgb(139, 139, 241);
+    border-left:  3px solid rgb(146, 255, 112);
+}
+
+#icones > li > img:hover {
+    scale: 1.25;
+    box-shadow: -2px -2px 5px rgb(146, 255, 112), 
+                2px 2px 5px rgb(139, 139, 241);
+}
+
+.iconeAtivo {
+    scale: 1.25;
+    box-shadow: -2px -2px 5px rgb(146, 255, 112), 
+                2px 2px 5px rgb(139, 139, 241);
+}
+
+#emailEnviado {
+    width: 50px;
+    margin-top: 2rem;
+
+    border-radius: 50%;
+    border-top: 3px solid rgb(146, 255, 112);
+    border-right: 3px solid rgb(139, 139, 241);
+    border-bottom: 3px solid rgb(139, 139, 241);
+    border-left:  3px solid rgb(146, 255, 112);
+}
+
+#painel {
+    width: 65%;
+    text-align: center;
+
+    margin: 1rem 17.5% 0 17.5%;
+    padding: .5rem 1rem 2rem 1rem;
+
+    border-top: 1px solid rgb(146, 255, 112);
+    border-right: 1px solid rgb(139, 139, 241);
+    border-bottom: 1px solid rgb(139, 139, 241);
+    border-left:  1px solid rgb(146, 255, 112);
+    border-radius: 10px;
+
+    box-shadow: -1px -1px 5px rgb(146, 255, 112), 
+                1px 1px 5px rgb(139, 139, 241);
+}
+
+#fechar {
+    width: 30px;
+    cursor: pointer;
+}
+
+#painel > #info > h3 {
+    margin-bottom: .5rem;
 }
 
 #tmodelo {
     font-weight: bold;
-
     margin: 1rem 17.5% 0 17.5%;
 }
 
 #download {
-    width: 100%;
+    width: 99%;
 
     display: flex;
     align-items: center;
@@ -47,6 +115,8 @@ ul > li {
 
     border: 1px solid lightgray;
     border-radius: 3px;
+    box-shadow: -1px -1px 5px rgb(146, 255, 112), 
+                1px 1px 5px rgb(139, 139, 241);
 
     text-decoration: none;
 }
@@ -63,30 +133,74 @@ ul > li {
 }
 
 .modelos {
-    margin-top: 1rem;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+    margin: 1rem 17.5% 0 17.5%;
 }
 
-a {
+#ciee {
     margin: 1rem 0;
     text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
+    #download {
+        margin-bottom: 2.5rem;
+    }
+
     #download > a {
         width: 40%;
     }
-}
 
-@media screen and (max-width: 540px) {
-    #download > a {
-        width: 60%;
+    article > p {
+        margin: 0 10%;
+    }
+
+    h1, h2 {
+        margin-bottom: 1rem;
+    }
+
+    ul > li {
+        margin: 0 10%;
+    }
+
+    .modelos {
+        margin: 0rem 10%;
+    }
+
+    #painel {
+        width: 72%;
+        margin-left: 10%;
+    }
+
+    #tmodelo {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #icones {
+        width: 99%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #icones > li > img {
+        width: 60px;
+    }
+
+    .icones {
+        margin: 1rem 0 1rem 40%
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #download > a {
-        width: 100%;
+        width: 80%;
+    }
+
+    #download > a > span {
+        margin-right: 25%;
+    }
+
+    .icones {
+        margin: 1rem 0 1rem 20%
     }
 }

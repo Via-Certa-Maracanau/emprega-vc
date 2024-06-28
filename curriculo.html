@@ -36,20 +36,39 @@
         <p>O grande objetivo do currículo é fazer com que você seja chamado para <b>uma entrevista</b>. Portanto, saber o que escrever e como mostrar suas vivências é essencial para que você consiga esse objetivo.</p>
 
         <h2>Dicas Gerais na elaboração de currículos</h2>
+        <span id="infoDicas">Clique nos ícones para ver as dicas</span>
         <p>
-            <ul>
-                <li><b>Seja objetivo e conciso:</b> Mantenha o currículo em uma ou duas páginas, dependendo da sua experiência.</li>
-                <li><b>Faça um currículo para cada vaga pretendida:</b> Adapte seu currículo para destacar as habilidades e experiências mais relevantes para cada posição.</li>
-                <li><b>Utilize um e-mail profissional:</b> ao enviar seu currículo por e-mail, utilize um endereço de e-mail profissional que seja fácil de lembrar e que não contenha apelidos ou palavras informais.</li>
-                <li><b>Contato: </b>fique atento ao telefone e e-mail informado no seu currículo, o recrutador vai tentar entrar em contato, se não atender ou responder com brevidade pode perder a oportunidade.</li>
-                <li><b>Formato Claro e Profissional:</b> Use um layout limpo, com fontes legíveis e seções bem definidas.</li>
-                <li><b>Revisão e Ortografia:</b> Revise o currículo várias vezes para corrigir erros de gramática e ortografia.</li>
-                <li><b>Consistência:</b> Certifique-se de que as informações são consistentes e de fácil leitura.</li>
-                <li><b>Foto:</b> colocar apenas quando solicitado.</li>
-                <li><b>Envio por e-mail:</b> Coloque o nome da vaga no assunto e no corpo do e-mail, informe a vaga que está enviando seu currículo.</li>
-                <li><b>Mantenha seu currículo em formato PDF:</b> assim a formatação original será preservada ao abrir o arquivo em diferentes dispositivos.</li>
+            <ul id="icones">
+                    <li onclick="exibirInfo(0)"><img class="icones" src="assets/img/icones-curriculo/objetivo.png"></li>
+    
+                    <li onclick="exibirInfo(1)"><img class="icones" src="assets/img/icones-curriculo/curricullo.png"></li>
+                    
+                    <li onclick="exibirInfo(2)"><img class="icones" src="assets/img/icones-curriculo/contato.png"></li>
+    
+                    <li onclick="exibirInfo(3)"><img class="icones" src="assets/img/icones-curriculo/formato.png"></li>
+    
+                    <li onclick="exibirInfo(4)"><img class="icones" src="assets/img/icones-curriculo/ortografia.png"></li>
+    
+                    <li onclick="exibirInfo(5)"><img class="icones" src="assets/img/icones-curriculo/consistencia.png"></li>
+    
+                    <li onclick="exibirInfo(6)"><img class="icones" src="assets/img/icones-curriculo/foto.png"></li>
+    
+                    <li onclick="exibirInfo(7)"><img class="icones" src="assets/img/icones-curriculo/pdf.png"></li>
+    
+                    <li onclick="exibirInfo(8)"><img class="icones" src="assets/img/icones-curriculo/email.png"></li>
             </ul>
         </p>
+
+        <div id="painel">
+            <div id="fechar" onclick="desligarPainel()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#2b3185"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            
+
+            <div id="info">
+                <!-- Aqui é exibido as informações dos icones -->
+            </div>
+        </div>
 
         <span id="tmodelo">AGORA VOCÊ ESTÁ PRONTO PARA ELABORAR SEU CURRÍCULO... VEJA A SEGUIR OS MODELOS SUGERIDOS. <br> BOA SORTE!</span>
 
@@ -70,9 +89,10 @@
 
         <span class="modelos"><b>MODELO 2:</b> modelo recomendado pelo CIEE (Centro de Integração Escola). O CIEE tem mais de 60 anos de história no Brasil e é uma das principais organizações responsável pela inserção de jovens no mundo do trabalho.</span>
 
-        <a href="https://portal.ciee.org.br/quero-me-preparar/faca-seu-curriculo/" target="_blank">Clique aqui para acessar o modelo</a>
+        <a href="https://portal.ciee.org.br/quero-me-preparar/faca-seu-curriculo/" target="_blank" id="ciee">Clique aqui para acessar o modelo</a>
     </article>
 
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/curriculo.js"></script>
 </body>
 </html>

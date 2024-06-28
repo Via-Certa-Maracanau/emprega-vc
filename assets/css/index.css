@@ -14,14 +14,19 @@ p {
     width: 65%;
     margin: 2rem 0 2rem 17.5%;
 
-    border: 1px solid rgb(43, 49, 133);
-    border-radius: 5px;
-    background-color: rgb(43, 49, 133);
+    box-shadow: -1px -1px 5px rgb(146, 255, 112), 
+                1px 1px 5px rgb(139, 139, 241);
+    border-top: 1px solid rgb(146, 255, 112);
+    border-right: 1px solid rgb(139, 139, 241);
+    border-bottom: 1px solid rgb(139, 139, 241);
+    border-left:  1px solid rgb(146, 255, 112);
+    border-radius: 10px;
+
+    background-color: rgba(128, 128, 128, .1);
 }
 
 #evco > p {
-    margin: 2.5rem 3% 0 3%;
-    background-color: white;
+    margin: 1rem 3% 2rem 3%;
     border-radius: 5px;
 }
 
@@ -31,8 +36,8 @@ p {
     font-size: 15pt;
 
     padding: 1rem 0;
-    border: 1px solid gray;
-    border-radius: 5px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2rem;
 }
 
 #evco > p > b > img {
@@ -41,9 +46,7 @@ p {
     margin-right: 1rem;
 }
 
-ol, ul {
-    color: white;
-}
+
 
 ol > li {
     font-weight: bold;
@@ -51,10 +54,6 @@ ol > li {
     cursor: pointer;
 
     display: flex;
-}
-
-ul {
-    padding-bottom: 1rem;
 }
 
 ul > li {
