@@ -36,33 +36,47 @@
 
         <p>Nós, da <b>Escola Via Certa Maracanaú</b>, iremos auxiliar você a se inserir no mercado de trabalho por meio do programa <b>Emprega VC</b>. Este programa de orientação profissional e desenvolvimento de carreira visa encaminhá-lo(a) para o mundo do trabalho, fornecendo suporte em diversas etapas do processo.</p>
 
-        <p>
-            <b>O Emprega VC oferece:</b>
-            <ol>
-                <li>Entrevista Simulada com Orientadora de Carreira e Profissão:</li>
-                <ul>
-                    <li>Realizamos simulações de entrevistas com uma orientadora de carreira experiente.</li>
-                </ul>
-
-                <li>Orientação na Elaboração de Currículo:</li>
-                <ul>
-                    <li>Realização de análise curricular por nossa orientadora analisando pontos fortes e fracos na sua jornada profissional.</li>
-                    <li>Ajudamos na criação de currículos, oferecendo modelos e orientações detalhadas.</li>
-                </ul>
-
-                <li>Cadastro em Plataformas Indicadas:</li>
-                    <ul>
-                        <li>Orientamos você no processo de cadastro em plataformas de estágio, jovem aprendiz e emprego.</li>
-                        <li>É fundamental ter atenção ao inserir seus dados para garantir que seu perfil esteja completo e atraente para as empresas recrutadoras.</li>
+        <div id="evco">
+            <p>
+                <b><img src="assets/img/vc_logo.png">O Emprega VC oferece:</b>
+                <ol>
+                    <li onclick="verificarLista('l1', 0)">
+                        1. Entrevista Simulada com Orientadora de Carreira e Profissão 
+                        <span class="iconList"></span>
+                    </li>
+                    <ul id="l1">
+                        <li>Realizamos simulações de entrevistas com uma orientadora de carreira experiente.</li>
                     </ul>
-                
-                <li>Divulgação de Oportunidades e Encaminhamento:</li>
-                    <ul>
-                        <li>Mantemos você informado sobre diversas oportunidades de emprego.</li>
-                        <li>Facilitamos o encaminhamento para entrevistas e processos seletivos, aumentando suas chances de inserção no mercado de trabalho.</li>
+    
+                    <li onclick="verificarLista('l2', 1)">
+                        2. Orientação na Elaboração de Currículo
+                        <span class="iconList"></span>
+                    </li>
+                    <ul id="l2">
+                        <li>Realização de análise curricular por nossa orientadora analisando pontos fortes e fracos na sua jornada profissional.</li>
+                        <li>Ajudamos na criação de currículos, oferecendo modelos e orientações detalhadas.</li>
                     </ul>
-            </ol>
-        </p>
+    
+                    <li onclick="verificarLista('l3', 2)">
+                        3. Cadastro em Plataformas Indicadas
+                        <span class="iconList"></span>
+                    </li>
+                        <ul id="l3">
+                            <li>Orientamos você no processo de cadastro em plataformas de estágio, jovem aprendiz e emprego.</li>
+                            <li>É fundamental ter atenção ao inserir seus dados para garantir que seu perfil esteja completo e atraente para as empresas recrutadoras.</li>
+                        </ul>
+                    
+                    <li onclick="verificarLista('l4', 3)">
+                        4. Divulgação de Oportunidades e Encaminhamento
+                        <span class="iconList"></span>
+                    </li>
+                        <ul id="l4">
+                            <li>Mantemos você informado sobre diversas oportunidades de emprego.</li>
+                            <li>Facilitamos o encaminhamento para entrevistas e processos seletivos, aumentando suas chances de inserção no mercado de trabalho.</li>
+                        </ul>
+                </ol>
+            </p>
+        </div>
 
         <p>Estamos comprometidos em fornecer o suporte necessário para que você alcance seus objetivos profissionais. Participe do projeto Emprega VC e dê um passo importante rumo à sua carreira!</p>
 
@@ -72,5 +86,6 @@
     </article>
 
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/lista.js"></script>
 </body>
 </html>
