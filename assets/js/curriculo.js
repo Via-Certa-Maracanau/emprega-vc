@@ -8,6 +8,8 @@ function exibirInfo(id) {
     ligarPainel()
     normal()
 
+    window.location.href = "#icones"
+
     switch(id) {
         case 0:
             info.innerHTML = `

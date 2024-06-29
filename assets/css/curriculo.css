@@ -33,7 +33,7 @@ article > p {
 }
 
 #icones > li > img {
-    width: 50px;
+    width: 60px;
     cursor: pointer;
     transition: 0.3s;
 
@@ -180,6 +180,7 @@ article > p {
         width: 99%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-left: .5rem;
     }
 
     #icones > li > img {
