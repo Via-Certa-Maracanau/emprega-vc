@@ -4,6 +4,9 @@ icones = document.getElementsByClassName("icones")
 
 desligarPainel()
 
+/*
+    Função que recebe o id de quem clicou nele e então seleciona a informação para exibir e mantém o ícone ativo.
+*/
 function exibirInfo(id) {
     ligarPainel()
     normal()

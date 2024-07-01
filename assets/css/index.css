@@ -10,6 +10,11 @@ p {
     margin: 1rem 17.5% 0 17.5%;
 }
 
+
+/**
+    evco - Emprega VC Oferece
+    Card com a lista de informações do emprega VC
+**/
 #evco {
     width: 65%;
     margin: 2rem 0 2rem 17.5%;
@@ -35,9 +40,9 @@ p {
     align-items: center;
     font-size: 15pt;
 
+    margin-bottom: 2rem;
     padding: 1rem 0;
     border-bottom: 1px solid gray;
-    margin-bottom: 2rem;
 }
 
 #evco > p > b > img {
@@ -45,15 +50,14 @@ p {
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
+/** Fim do evco **/
 
 
 ol > li {
+    display: flex;
     font-weight: bold;
     margin: 1.5rem 0 0 3.2%;
     cursor: pointer;
-
-    display: flex;
 }
 
 ul > li {
@@ -64,6 +68,8 @@ ul > li {
     border-left: 2px solid rgb(114, 209, 18);
 }
 
+
+/** Deixa as sublistas invisíveis. **/
 #l1, #l2, #l3, #l4 {
     display: none;
 }

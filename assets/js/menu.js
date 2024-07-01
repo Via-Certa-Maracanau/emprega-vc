@@ -8,8 +8,10 @@ if(window.innerWidth < 700) {
 
 menu_icon.addEventListener('click', () => menuStatus())
 
-//Função que verifica se o menu está visível ou não, e então chama o oposto dele.
-//Se está vísivel(unset) desativa e vice-versa.
+/*
+    Função que verifica se o menu está visível ou não, e então chama o oposto dele.
+    Se está vísivel(unset) desativa e vice-versa.
+*/
 function menuStatus() {
     if(menu.style.display == "unset") {
         menuFechado()
