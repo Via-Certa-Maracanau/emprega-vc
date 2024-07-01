@@ -21,7 +21,7 @@ article > p {
 #infoDicas {
     text-align: center;
     font-weight: 500;
-    color: gray;
+    color: dimgray;
     margin: .5rem 0;
 }
 
@@ -101,7 +101,11 @@ article > p {
 
 #tmodelo {
     font-weight: bold;
+    color: dimgray;
+    border-left: 2px solid lightgray;
+
     margin: 1rem 17.5% 0 17.5%;
+    padding-left: .5rem;
 }
 
 #download {
