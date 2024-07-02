@@ -30,11 +30,8 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-#wpp {
-    width: 200px;
-    transition: 0.3s;
+    margin-top: 1rem;
 }
 
 #qrCode {

@@ -1,5 +1,5 @@
 article {
-    width: 99%;
+    width: 100%;
     height: 88vh;
     display: flex;
     flex-direction: column;
@@ -41,11 +41,11 @@ article > p {
     cursor: pointer;
     transition: 0.3s;
 
-    border-radius: 50%;
     border-top: 3px solid rgb(146, 255, 112);
     border-right: 3px solid rgb(139, 139, 241);
     border-bottom: 3px solid rgb(139, 139, 241);
     border-left:  3px solid rgb(146, 255, 112);
+    border-radius: 50%;
 }
 
 #icones > li > img:hover {
@@ -64,11 +64,11 @@ article > p {
     width: 50px;
     margin-top: 2rem;
 
-    border-radius: 50%;
     border-top: 3px solid rgb(146, 255, 112);
     border-right: 3px solid rgb(139, 139, 241);
     border-bottom: 3px solid rgb(139, 139, 241);
     border-left:  3px solid rgb(146, 255, 112);
+    border-radius: 50%;
 }
 
 #painel {
@@ -108,7 +108,7 @@ article > p {
     padding-left: .5rem;
 }
 
-#download {
+#download, #upload {
     width: 99%;
 
     display: flex;
@@ -118,7 +118,7 @@ article > p {
     margin: 1rem 0;
 }
 
-#download > a {
+#download > a, #upload > a {
     width: 30%;
     display: flex;
     align-items: center;
@@ -132,14 +132,19 @@ article > p {
 }
 
 #download > a > img {
+    width: 40px;
     margin-left: 1rem;
 }
 
-#download > a > span {
+#download > a > span, #upload > a > span {
     margin-left: .5rem;
     margin-right: 40%;
     
     color: black;
+}
+
+#upload > a {
+    height: 40px;
 }
 
 .modelos {
@@ -152,11 +157,11 @@ article > p {
 }
 
 @media screen and (max-width: 1000px) {
-    #download {
+    #download, #upload {
         margin-bottom: 2.5rem;
     }
 
-    #download > a {
+    #download > a, #upload > a {
         width: 40%;
     }
 
@@ -203,11 +208,11 @@ article > p {
 }
 
 @media screen and (max-width: 600px) {
-    #download > a {
+    #download > a, #upload > a {
         width: 80%;
     }
 
-    #download > a > span {
+    #download > a > span, #upload > a > span {
         margin-right: 25%;
     }
 
